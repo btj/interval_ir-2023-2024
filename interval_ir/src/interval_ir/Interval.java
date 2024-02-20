@@ -6,29 +6,29 @@ public class Interval {
 	private int bovengrens;
 	
 	// Getters (ook inspectoren genoemd)
-	public static int getOndergrens(Interval interval) {
-		return interval.ondergrens;
+	public int getOndergrens() {
+		return this.ondergrens;
 	}
 	
-	public static int getBovengrens(Interval interval) {
-		return interval.bovengrens;
+	public int getBovengrens() {
+		return this.bovengrens;
 	}
 	
-	public static int getLengte(Interval interval) {
-		return interval.bovengrens - interval.ondergrens;
+	public int getLengte() {
+		return this.bovengrens - this.ondergrens;
 	}
 	
 	// Setters (ook mutatoren genoemd)
-	public static void setOndergrens(Interval interval, int nieuweOndergrens) {
-		interval.ondergrens = nieuweOndergrens;
+	public void setOndergrens(int nieuweOndergrens) {
+		this.ondergrens = nieuweOndergrens;
 	}
 	
-	public static void setBovengrens(Interval interval, int nieuweBovengrens) {
-		interval.bovengrens = nieuweBovengrens;
+	public void setBovengrens(int nieuweBovengrens) {
+		this.bovengrens = nieuweBovengrens;
 	}
 	
-	public static void setLengte(Interval interval, int nieuweLengte) {
-		interval.bovengrens = interval.ondergrens + nieuweLengte;
+	public void setLengte(int nieuweLengte) {
+		this.bovengrens = this.ondergrens + nieuweLengte;
 	}
 
 }
