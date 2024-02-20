@@ -18,6 +18,11 @@ public class Interval {
 		return this.bovengrens - this.ondergrens;
 	}
 	
+	public Interval(int initiëleOndergrens, int initiëleLengte) {
+		this.ondergrens = initiëleOndergrens;
+		this.bovengrens = initiëleOndergrens + initiëleLengte;
+	}
+	
 	// Setters (ook mutatoren genoemd)
 	public void setOndergrens(int nieuweOndergrens) {
 		this.ondergrens = nieuweOndergrens;
